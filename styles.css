@@ -5,6 +5,9 @@ body,h1,h2,p,label,input,button{
 body{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 header{
     background-color: #333;
@@ -13,10 +16,12 @@ header{
     padding: 1rem;
 }
 main{
+     flex: 1 0 auto;
     padding:2rem;
     text-align: center;
 }
 footer{
+    flex-shrink: 0;
     text-align: center;
     padding: 1rem 0;
     background-color: #333;
